@@ -18,7 +18,7 @@ class AudioSnippet:
 
     def __init__(self, audio_clip, number):
         self.audio_clip = audio_clip
-        self.output_name = str(number) + '.mp3'
+        self.output_name = str(number).zfill(3) + '.mp3'
 
     def __repr__(self):
         return f"audio_clip: {self.output_name}, length (ms): {len(self)}"
